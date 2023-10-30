@@ -27,7 +27,7 @@ function calcularTiempo(){
     minutos = minutos < 10 ? "0" + minutos : minutos;
     segundos = segundos < 10 ? "0" + segundos : segundos;
 
-    let horaLet = tiempo >= 12 ? "PM" : "AM" 
+    let horaLet = tiempo <= 12 ? "PM" : "AM" 
   
     let pantallaReloj = hora + ":" + minutos + ":" + segundos;
     let relojDigital = document.querySelector(".reloj_digital ", horaLet);

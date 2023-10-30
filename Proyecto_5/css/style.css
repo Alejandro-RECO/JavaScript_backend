@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -8,18 +10,22 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(20, 20, 20);
+
 }
 
 .esqueletoOff{
     width: 500px;
     height: 600PX;
-    background-color: rgb(20, 20, 20);
     display: flex;
     align-items: end;
     /* texto cualquiera */
     justify-content: center;
     padding: 20px;
     background-image: url(../img/esqueleto2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .esqueletoOnOff{
     text-align: center;
@@ -35,13 +41,17 @@ body{
     text-transform: uppercase;
     border: 2px solid rgb(238, 222, 6);
     background-color: rgb(238, 222, 6);
+    font-weight: bold;
 }
-.esqueletoOnOff:hover{
+.active{
     transition: .3s;
-    background: rgb(20, 20, 20);
+    background: transparent;
     color: rgb(238, 222, 6);
+    text-shadow: 2px 2px 4px rgb(238, 222, 6);
+    box-shadow: 0px 0px 10px rgb(238, 222, 6);
 }
  
 .on{
     background-image: url(../img/esqueleto1.gif);
+    background-size: cover;
 }

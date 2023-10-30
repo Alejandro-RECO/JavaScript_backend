@@ -30,7 +30,7 @@ botones.forEach(boton=>{
         }else{
             panatlla.textContent += eleccion
         }
-        if(panatlla.textContent === "//"){
+        if(panatlla.textContent.includes("//")){
             panatlla.textContent = "ERROR";
             return
         }

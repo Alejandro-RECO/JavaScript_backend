@@ -1,25 +1,36 @@
-let esqueleto = "off"
-let esqueleto1IdQuieto = document.getElementById('esqueleto1Id')
-let botonSonido = new Audio ('./sounds/botonbailar.mp3') 
-let botonAudio = new Audio ('./sounds/audio___1.mp3')
+const deg = 6;
 
-function bailar(){
-    if(esqueleto === "off"){    
-        esqueleto = "on"
-        esqueleto1IdQuieto.classList.add("on")
-        esqueleto1IdQuieto.addEventListener('click', ()=>{
-            botonSonido.play()
-        })
-        esqueleto1IdQuieto.addEventListener('click', ()=>{
-            botonAudio.play()
-        })
-        console.log("On");
-    }else{
-        esqueleto = "off"
-        esqueleto1IdQuieto.classList.remove("on")
-        esqueleto1IdQuieto.addEventListener('click', ()=>{
-            botonAudio.pause()
-        })
-        console.log("Off")
-    }
-}
+const hora = document.querySelector('.hora');
+const minuto = document.querySelector('.minuto');
+const segundo = document.querySelector('.segundo');
+
+setInterval(()=>{
+  let tiempo = new Date();
+
+  let hr = tiempo.getHours() * 30;
+  let min = tiempo.getMinutes() * deg;
+  let seg = tiempo.getSeconds() * deg;
+
+  hora.style.transform =`rotate(${(hr) + (min/12)}deg)`;
+  minuto.style.transform = `rotate(${(min)}deg)`;
+  segundo.style.transform = `rotate(${seg}deg)`;
+})
+
+function calcularTiempo(){
+    let tiempo = new Date();
+  
+    let hora = tiempo.getHours();
+    let minutos = tiempo.getMinutes();
+    let segundos = tiempo.getSeconds();
+  
+    hora = hora < 10 ? "0" + hora : hora;
+    minutos = minutos < 10 ? "0" + minutos : minutos;
+    segundos = segundos < 10 ? "0" + segundos : segundos;
+
+    let horaLet = tiempo >= 12 ? "PM" : "AM" 
+  
+    let pantallaReloj = hora + ":" + minutos + ":" + segundos;
+    let relojDigital = document.querySelector(".reloj_digital ", horaLet);
+    relojDigital.innerHTML = (pantallaReloj+ " "+ horaLet);
+  
+} setInterval(calcularTiempo, 1000);

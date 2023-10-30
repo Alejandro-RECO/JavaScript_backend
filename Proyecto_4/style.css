@@ -99,7 +99,8 @@ body {
     margin-top: 150px;
     border-radius: 10px;
     font-family: monospace;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: rgb(99, 99, 99);
     box-shadow: 0px 0px 8px rgb(226, 27, 76) inset;
+    padding: 5px;
 }

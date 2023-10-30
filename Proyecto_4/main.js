@@ -24,13 +24,16 @@ function calcularTiempo(){
     let segundos = tiempo.getSeconds();
   
     hora = hora < 10 ? "0" + hora : hora;
+    
+    let horaLet = hora > 12 ? "PM" : "AM"
+
+    hora = hora % 12 || 12
     minutos = minutos < 10 ? "0" + minutos : minutos;
     segundos = segundos < 10 ? "0" + segundos : segundos;
 
-    let horaLet = tiempo <= 12 ? "PM" : "AM" 
   
     let pantallaReloj = hora + ":" + minutos + ":" + segundos;
-    let relojDigital = document.querySelector(".reloj_digital ", horaLet);
+    let relojDigital = document.querySelector(".reloj_digital");
     relojDigital.innerHTML = (pantallaReloj+ " "+ horaLet);
   
 } setInterval(calcularTiempo, 1000);

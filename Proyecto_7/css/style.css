@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(44, 44, 44);
+}
+.contenedor{
+    border-radius: .5em;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background: rgb(44, 44, 44);
+    flex-direction: column;
+    box-shadow: 0 1px 8px 0 rgba(219, 207, 207, 0.2), 0 1px 220px 0 rgba(151, 151, 151, 0.19);
+}
+
+.pantalla{
+    user-select: none;
+}
+
+.pantalla .cronometro{
+    height: 100px;
+    background: #383838;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5em;
+    border: none;
+    /* box-shadow: 0 4px 8px 0 rgba(219, 207, 207, 0.2), 0 6px 20px 0 rgba(151, 151, 151, 0.19); */
+}
+
+.pantalla .cronometro span{
+    width: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    font-weight: 550;
+    color: #fbffe3;
+}
+
+.cronometro span.separador{
+    text-align: center;
+    width: 5px;
+}
+
+.cronometro span.separador-mili{
+    width: 5px;
+}
+
+.cronometro span.milisegundo,
+.cronometro span.separador-mili{
+    color: #9e0c39;
+}
+
+.pantalla .botones{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.pantalla button{
+    padding: 6px 16px;
+    outline: none;
+    border: none;
+    margin: 0px 10px;
+    color:  #fbffe3;
+    background: #353634;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.pantalla button.on{
+    pointer-events: none;
+    opacity: 0.8;
+    box-shadow: 0 4px 8px 0 rgba(219, 207, 207, 0.2), 0 6px 20px 0 rgba(151, 151, 151, 0.19);
+}
+
+
+
+
+
+
+
+
+

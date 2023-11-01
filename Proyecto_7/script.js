@@ -26,7 +26,7 @@ function iniciar () {
             ms = "0" + 0;
         }
 
-        if (mn == 60) {
+        if (sg == 60) {
             mn++;
             mn = mn < 10 ? "0" + mn : mn;
             sg = "0" + 0;

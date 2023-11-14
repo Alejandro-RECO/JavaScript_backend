@@ -129,7 +129,7 @@ body{
     font-size: 35px;
     
 }
-@media (max-width: 900px) {
+@media (max-width: 1412px) {
     .container{
         display: flex;
         flex-direction: column-reverse;
@@ -141,5 +141,25 @@ body{
         font-size: 3rem;
         text-align: center;
 
+    }
+    .santaClausOff{
+        width: 350px;
+        height: 350px;
+    }
+    .countdown-items{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: aliceblue;
+        gap: 11px;
+        font-size: 25px;
+    }
+    .box{
+        width: 68px;
+    }
+    .santaClausOff.on{
+        width: 390px;
+        height: 350px;
     }
 }

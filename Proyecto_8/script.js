@@ -26,7 +26,7 @@ function cuentaRegresiva(tiempoFaltante,reloj,mensaje){
     const segundos = document.querySelector('.segundos');
     const botones = document.getElementById('boton')
     const botones1 = document.getElementById('boton1')
-    const papaNoel = document.querySelector('.papaNoelOff')
+    const papaNoel = document.querySelector('.santaClausOff')
 
     
 
@@ -76,7 +76,7 @@ function pause1(){
 }
 
 
-cuentaRegresiva('Dec 25 2023 00:00:0000 GMT-0500','cuentaRegresiva','¡Feliz Navidad!')
+cuentaRegresiva('November 14, 2023 09:20:00','cuentaRegresiva','¡Feliz Navidad!')
 
 
 

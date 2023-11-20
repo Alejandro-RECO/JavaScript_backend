@@ -1,0 +1,138 @@
+:root {
+    --main-bg-color: #8d7966;
+    --main-secondary-color:#e2ddd9;
+    --main-secondary-200-color:#d8c8b8;
+    --mian-text-color: #f8f1e9;
+    --mian-text-secondary-color: #f8f1e9;
+}
+@font-face {
+    font-family: 'Agbalumo'; /* Puedes darle el nombre que desees */
+    src: url('/proyecto_9/fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+  }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Agbalumo', sans-serif;
+} 
+.titulo{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 3rem;
+    border-bottom: 2px solid var(--main-secondary-color);
+}
+.eventos{
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--mian-text-color);
+    padding: 10px;
+    font-size: 1.2rem;
+    height: 100vh;
+}
+.formulario{
+    background-color: var(--main-secondary-color);
+    padding: 20px;
+    width: 360px;
+    margin-bottom: 15px;
+    border-radius: .2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.botonera{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.inputs{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: .2rem;
+    outline: none;
+}
+.enviar{
+    font-size: 1rem;
+    background-color: var(--main-bg-color);
+    color: var(--main-secondary-color);
+    transition: .2s;
+    display: block;
+}
+.enviar:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+    background-color: var(--main-bg-color);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+}
+
+.listaEventos{
+    width: 600px;
+    padding: 20px;
+    border-radius: .2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--main-secondary-color);
+}
+.evento{
+    color: var(--main-bg-color);
+    padding:20px 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: .2rem;
+    border: 2px solid var(--main-bg-color);
+}
+.dias{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.diasFaltantes{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.nombreEvento{
+    width: 170px;
+    overflow-x: auto;
+    padding: 10px;
+    text-align: center;
+}
+.nombreEvento::-webkit-scrollbar{
+    background-color: rgb(255, 255, 255);
+    height: 5px;
+    border-radius: 3rem;
+}
+.nombreEvento::-webkit-scrollbar-thumb{
+    height: 30px;
+    background-color: #8d7966;
+    border-radius: 2rem;
+}
+.fechaEvento{
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bolder;
+}
+.eliminar{
+    border: none;
+    padding: 10px 12px;
+    border-radius: .2rem;
+    background-color: var(--main-bg-color);
+    color: var(--mian-text-color);
+    transition: .2s;
+    display: block;
+}
+.eliminar:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+    background-color: rgb(206, 49, 49);
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}

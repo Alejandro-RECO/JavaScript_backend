@@ -76,7 +76,7 @@ function pause1(){
 }
 
 
-cuentaRegresiva('November 14, 2023 09:20:00','cuentaRegresiva','¡Feliz Navidad!')
+cuentaRegresiva('Dec 25 2023 00:00:0000 GMT-0500','cuentaRegresiva','¡Feliz Navidad!')
 
 
 
